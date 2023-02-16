@@ -1,8 +1,8 @@
 This project is used to gathering information about target domain such:
 
-  1.ipaddress , latitude , longitude, region , timezone and much more.
+  1. Ipaddress , latitude , longitude, region , timezone and much more.
 
-  2.plotting coordinates on map for data visualization.
+  2.Plotting coordinates on map for data visualization.
 
   3.DNS information gathering:
       3.1AAAA ,CNAME, NS,TXT,SOA,SRV,PTR.
