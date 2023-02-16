@@ -1,3 +1,1 @@
-# repository
-# render.dev
-# Information-Gathering-Tool
+This project is used to gathering information about target domain.
