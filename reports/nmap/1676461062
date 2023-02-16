@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Feb 15 17:07:47 2023 as: nmap -p1-65535 -sV -sC -vv -oX ./reports/nmap/1676461062 bytebeam.io -->
+<nmaprun scanner="nmap" args="nmap -p1-65535 -sV -sC -vv -oX ./reports/nmap/1676461062 bytebeam.io" start="1676461067" startstr="Wed Feb 15 17:07:47 2023" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676461068"/>
+<taskend task="NSE" time="1676461068"/>
+<taskbegin task="NSE" time="1676461068"/>
+<taskend task="NSE" time="1676461068"/>
+<taskbegin task="NSE" time="1676461068"/>
+<taskend task="NSE" time="1676461068"/>
+<taskbegin task="Ping Scan" time="1676461068"/>
+<taskend task="Ping Scan" time="1676461068" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676461068"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676461068"/>
+<taskbegin task="Connect Scan" time="1676461068"/>
+<taskprogress task="Connect Scan" time="1676461099" percent="18.33" remaining="139" etc="1676461237"/>
+<taskprogress task="Connect Scan" time="1676461129" percent="36.87" remaining="105" etc="1676461233"/>
+<taskprogress task="Connect Scan" time="1676461159" percent="54.55" remaining="76" etc="1676461235"/>
+<taskprogress task="Connect Scan" time="1676461189" percent="76.73" remaining="37" etc="1676461226"/>
+<taskprogress task="Connect Scan" time="1676461219" percent="62.84" remaining="90" etc="1676461308"/>
+<taskprogress task="Connect Scan" time="1676461249" percent="79.52" remaining="47" etc="1676461296"/>
+<taskend task="Connect Scan" time="1676461278" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1676461278"/>
+<taskend task="Service scan" time="1676461435" extrainfo="16 services on 1 host"/>
+<taskbegin task="NSE" time="1676461435"/>
+<taskprogress task="NSE" time="1676461466" percent="94.15" remaining="2" etc="1676461468"/>
+<taskprogress task="NSE" time="1676461496" percent="99.34" remaining="1" etc="1676461496"/>

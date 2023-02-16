@@ -1,0 +1,16 @@
+//This file contains all packages to be installed - sudo and pip
+
+pip install Flask gunicorn
+pip install pandas
+pip install xlwt openpyxl xlsxwriter xlrd
+sudo apt-get install npm
+npm install -g localtunnel #for hosting your project on public IP to be able to access globally
+pip install google-api-python-client
+pip install Flask-Mobility
+pip install device-detector
+pip install pyotp
+pip install folium
+pip install celery
+sudo apt-get install nmap
+sudo apt-get install xsltproc
+sudo apt-get install dnsrecon

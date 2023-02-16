@@ -1,0 +1,51 @@
+{% extends "session/base.html" %}
+{% block content %}
+      <style type="text/css">
+        input{
+            width: 400px;
+            height: 40px;
+            margin-top:300px;
+            color:black;
+        }
+        
+        button{
+            margin-top: 300px;
+        }
+        body {background-color:#ffffff;
+        } 
+    </style>
+    </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Project-X</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
+           </ul>
+           </div>
+    </nav>
+    <div class="alert alert-success" role="alert">
+      Dear {{username}} , you have successfully logged in.
+    </div>
+      <div class="container">
+        <!--vertical align on parent using my-auto, horizontal align on self mx-auto-->
+        <form action="/elements" method="post">
+            <div class="d-flex justify-content-center align-items-center">
+                <input type="text" name="search" placeholder="https://www.google.com or 10.10.10.10" required>&nbsp;
+                <div class="d-grid gap-2 d-md-block" id="search-button">
+                    <button class="btn btn-light btn-dark" type="submit">Search</button>
+                  </div>
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+            </div>
+        </form>
+    </div>
+  </body>
+  {% endblock %}

@@ -1,0 +1,64 @@
+{% extends "session/base.html" %}
+{% block content %}
+        <style type="text/css">
+        
+        body {background-color:#ffffff;
+         } 
+    </style>
+    </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Project-X</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/elements">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/map">map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/dns">dns</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                nmap
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/reportRecon">Port Scan</a></li>
+                <li><a class="dropdown-item" href="/reportServ">Service Scan</a></li>
+                <li><a class="dropdown-item" href="/reportVuln">Vulnerability</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!--
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form>-->
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+         </ul>
+         </div>
+    </nav>     
+      {% if dnsinfo %}   
+      <div class="alert alert-success" role="alert">
+        General DNS enumeration , for more  in depth : <a  href="/depthdns">detailed</a>
+      </div>  
+        {%for record in dnsinfo %}
+        <p>{{record}}</p>
+        {% endfor %}
+      {% else %}
+       <br> <p> Please wait for 5 minutes for results to populate.</p><br>
+      {% endif %}
+      </body>
+{% endblock %}

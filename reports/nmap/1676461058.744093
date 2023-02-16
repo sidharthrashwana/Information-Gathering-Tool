@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Feb 15 17:07:43 2023 as: nmap -p1-65535 -vv -oX ./reports/nmap/1676461058.744093 bytebeam.io -->
+<nmaprun scanner="nmap" args="nmap -p1-65535 -vv -oX ./reports/nmap/1676461058.744093 bytebeam.io" start="1676461063" startstr="Wed Feb 15 17:07:43 2023" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1676461063"/>
+<taskend task="Ping Scan" time="1676461063" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676461063"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676461064"/>
+<taskbegin task="Connect Scan" time="1676461064"/>
+<taskprogress task="Connect Scan" time="1676461095" percent="17.23" remaining="149" etc="1676461244"/>
+<taskprogress task="Connect Scan" time="1676461125" percent="33.17" remaining="123" etc="1676461248"/>
+<taskprogress task="Connect Scan" time="1676461155" percent="46.95" remaining="103" etc="1676461258"/>
+<taskprogress task="Connect Scan" time="1676461185" percent="61.41" remaining="77" etc="1676461261"/>
+<taskprogress task="Connect Scan" time="1676461215" percent="78.81" remaining="41" etc="1676461256"/>
+<taskend task="Connect Scan" time="1676461241" extrainfo="65535 total ports"/>
+<host starttime="1676461063" endtime="1676461241"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="104.26.9.140" addrtype="ipv4"/>
+<hostnames>
+<hostname name="bytebeam.io" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="65519">
+<extrareasons reason="no-responses" count="65519"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="554"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rtsp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1723"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pptp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2052"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="clearvisn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2053"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="knetd" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2082"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="infowave" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2083"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="radsec" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2086"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="gnunet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2087"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="eli" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2095"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="nbx-ser" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2096"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="nbx-dir" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8880"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="cddbp-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="43872" rttvar="12684" to="100000"/>
+</host>
+<runstats><finished time="1676461241" timestr="Wed Feb 15 17:10:41 2023" elapsed="177.24" summary="Nmap done at Wed Feb 15 17:10:41 2023; 1 IP address (1 host up) scanned in 177.24 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

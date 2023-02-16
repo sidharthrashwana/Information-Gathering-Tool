@@ -1,0 +1,19 @@
+{
+    "params":
+    {
+        "name":"<your name>",
+        "send_to":"<your contact email>",
+        "local_server":"True",
+        "local_uri":"mysql+pymysql://root:@127.0.0.1/userdata",
+        "prod_uri":"mysql+pymysql://root:<password>@127.0.0.1/userdata",
+        "location":"Bangalore,Karnataka,India",
+        "contact":"<contact>",
+        "gmail-user":"<gmail-username>",
+        "gmail-pass":"<gmail-key-for-sending-email>",
+        "admin_email":"<admin-email>",
+        "admin_pass":"<admin-pass>",
+        "secret-key":"<random-secret-key>",
+        "mysql_pass":"<enter-mysql-password(if any)>",
+        "flask_port":5000
+    }
+}

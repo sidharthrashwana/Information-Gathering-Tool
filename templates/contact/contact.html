@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>contact form</title>
+</head>
+
+<body>
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/contact-form.css')}}">
+
+<div class="container">
+    <div class="fcf-body">
+
+        <div id="fcf-form">
+        <h3 class="fcf-h3">Contact</h3>
+
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="/contactInfo">
+            
+            <div class="fcf-form-group">
+                <label for="Name" class="fcf-label">Name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Name" name="name" class="fcf-form-control" required>
+                </div>
+            </div>
+        
+            <div class="fcf-form-group">
+                <label for="Subject" class="fcf-label">Subject</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Subject" name="subject" class="fcf-form-control"  required>
+                </div>
+            </div>
+
+            <div class="fcf-form-group">
+                <label for="Email" class="fcf-label">Email</label>
+                <div class="fcf-input-group">
+                    <input type="email" id="Email" name="email" class="fcf-form-control"  required>
+                </div>
+            </div>
+
+            <div class="fcf-form-group">
+                <label for="Message" class="fcf-label">Message</label>
+                <div class="fcf-input-group">
+                    <textarea id="Message" name="message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                </div>
+            </div>
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+            <div class="fcf-form-group">
+                <button type="hidden" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"  name="csrf_token" value="{{ csrf_token() }}">Send Message</button>
+            </div>
+
+        </form>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
